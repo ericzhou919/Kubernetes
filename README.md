@@ -53,4 +53,21 @@ kubectl describe pods my-pod
 ## Kubernetes Service  
 Defines a logical set of pods and a policy to access them.  
 
+Create service.  
+```cmd
+kubectl expose pod my-pod --type=NodePort --name=my-pod-service
+service "my-pod-service" exposed
+```
 
+Run service.  
+```cmd
+minikube service my-pod-service --url
+http://127.0.0.1:61053
+```
+
+```cmd
+curl http://127.0.0.1:61053/ping
+curl http://127.0.0.1:61053
+```
+
+![image](k8s_demo.png) 
