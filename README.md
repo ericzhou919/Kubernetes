@@ -1,7 +1,7 @@
 # Practice Kubernetes 
 
 After pushing a container image to Docker Hub.  
-https://github.com/zhouchenyu000/Docker  
+https://github.com/ericzhou919/Docker  
   
 ## Kubernetes Pod   
 Is the smallest and simplest unit in the Kubernetes object model. It represents a single instance of a running process in your cluster.
